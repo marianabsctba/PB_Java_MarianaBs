@@ -1,0 +1,4 @@
+arroz;10.00
+feijao;25.00
+carne;12.00
+pizza;80.00
