@@ -1,4 +1,4 @@
-Julio; 22222222;d@gmail.com; Curitiba
-Elberth; 9999999999;dois@gmail.com; Londrina
-Pivotto; 666666666;tres@gmail.com; Sao Paulo
-Lu; 9999728829292;quatro@gmail.com; Rio de Janeiro
+Julio; 22222222;d@gmail.com; Administrador;Curitiba
+Elberth; 9999999999;dois@gmail.com; Administrador; Londrina
+Pivotto; 666666666;tres@gmail.com; Administrador;Sao Paulo
+Lu; 9999728829292;quatro@gmail.com; Administrador;Rio de Janeiro

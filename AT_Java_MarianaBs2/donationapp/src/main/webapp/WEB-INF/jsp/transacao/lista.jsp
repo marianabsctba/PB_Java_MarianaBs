@@ -40,7 +40,7 @@
 						<th>Frete</th>
 						<th>Data</th>
 						<th>Doador</th>
-						<th>Produtos</th>
+						<th>Produtos</th>					
 						<th>Ação</th>
 					</tr>
 				</thead>
