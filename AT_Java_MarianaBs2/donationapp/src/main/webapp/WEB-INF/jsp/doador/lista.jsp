@@ -20,7 +20,7 @@
 		<form action="/doador" method="get">
 			<c:if test="${not empty mensagem}">
 				<div class="alert alert-success">
-					<strong>Sucesso!</strong> ${mensagem}
+					<strong></strong> ${mensagem}
 				</div>
 			</c:if>
 			<button class="btn btn-primary" type="submit">Novo</button>

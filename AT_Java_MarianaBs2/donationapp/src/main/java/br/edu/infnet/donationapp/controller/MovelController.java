@@ -56,9 +56,13 @@ public class MovelController {
 		
 		Movel movel = movelService.obterPorId(id);
 
-		movelService.excluir(id);
-
-		msg = "Exclusão do movel " + movel.getNome() + " feito com sucesso!";
+		try {
+			movelService.excluir(id);
+			
+			msg = "A exclusão do item "+movel.getNome()+" foi realizada com sucesso!!!";
+		} catch (Exception e) {
+			msg = "Impossível realizar a exclusão do item "+movel.getNome()+"!!!";
+		}
 
 		return "redirect:/movel/lista";
 	}

@@ -55,9 +55,14 @@ public class DoadorController {
 	@GetMapping(value = "/doador/{id}/excluir")
 	public String excluir(@PathVariable Integer id) {
 
-		doadorService.excluir(id);
-
-		msg = "Exclusão do doador ("+id+") foi efetuada com sucesso!";
+		try {
+			doadorService.excluir(id);
+			
+			msg = "A exclusão do doador realizada com sucesso!!!";
+		} catch (Exception e) {
+			msg = "Impossível realizar a exclusão do doador!!!";
+		}
+		
 
 
 		return "redirect:/doador/lista";

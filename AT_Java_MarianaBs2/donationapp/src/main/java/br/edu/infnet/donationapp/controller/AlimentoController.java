@@ -56,9 +56,14 @@ public class AlimentoController {
 		
 		Alimento alimento = alimentoService.obterPorId(id);
 
-		alimentoService.excluir(id);
-
-		msg = "Exclusão do alimento " + alimento.getNome() + " feito com sucesso!";
+		try {
+			alimentoService.excluir(id);
+			
+			msg = "A exclusão do item "+alimento.getNome()+" foi realizada com sucesso!!!";
+		} catch (Exception e) {
+			msg = "Impossível realizar a exclusão do produto "+alimento.getNome()+"!!!";
+		}
+		
 
 		return "redirect:/alimento/lista";
 	}

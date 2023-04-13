@@ -56,9 +56,13 @@ public class VestuarioController {
 		
 		Vestuario vestuario = vestuarioService.obterPorId(id);
 
-		vestuarioService.excluir(id);
-
-		msg = "Exclusão do vestuario " + vestuario.getNome() + " feito com sucesso!";
+		try {
+			vestuarioService.excluir(id);
+			
+			msg = "A exclusão do item "+vestuario.getNome()+" foi realizada com sucesso!!!";
+		} catch (Exception e) {
+			msg = "Impossível realizar a exclusão do produto "+vestuario.getNome()+"!!!";
+		}
 
 		return "redirect:/vestuario/lista";
 	}
