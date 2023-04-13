@@ -42,7 +42,7 @@
 						<th>E-mail</th>
 						<th>CPF</th>
 						<th>Usuário</th>
-						<th>Endereço</th>
+						<th>Cidade</th>
 						<th>Ação</th>
 					</tr>
 				</thead>
